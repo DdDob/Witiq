@@ -1,0 +1,28 @@
+{
+  "name": "witiq",
+  "version": "1.2.0",
+  "description": "Witiq: a pay-per-request agent marketplace on Solana mainnet using x402. First agent: a Token Safety Scanner. Pay a cent, get the result, no subscription.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "keygen": "node scripts/keygen.js",
+    "dev": "node dev.js",
+    "start": "node dev.js",
+    "buyer": "node scripts/buyer.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@scure/base": "^1.2.0",
+    "@solana/kit": "^8.0.0",
+    "@x402/core": "^2.28.0",
+    "@x402/express": "^2.28.0",
+    "@x402/fetch": "^2.28.0",
+    "@x402/svm": "^2.28.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  },
+  "license": "MIT"
+}
